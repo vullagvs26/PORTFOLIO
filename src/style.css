@@ -19,7 +19,7 @@
 
   .nav-link::after {
     content: '';
-    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300;
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-[#FF9766] to-[#FF6062] transition-all duration-300;
   }
 
   .nav-link:hover::after {
@@ -31,22 +31,22 @@
   }
 
   .section-title {
-    @apply text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-8;
+    @apply text-4xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent mb-8;
   }
 
   .tech-pill {
-    @apply px-4 py-1.5 rounded-full text-sm font-medium bg-gradient-to-r from-primary/20 to-accent/20 border border-white/10 backdrop-blur-sm;
+    @apply px-4 py-1.5 rounded-full text-sm font-medium bg-gradient-to-r from-[#FF9766]/20 to-[#FF6062]/20 border border-white/10 backdrop-blur-sm;
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-medium transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-0.5;
+    @apply px-6 py-3 rounded-lg bg-gradient-to-r from-[#FF9766] to-[#FF6062] hover:from-[#FF9766]/90 hover:to-[#FF6062]/90 text-white font-medium transition-all duration-300 shadow-lg shadow-[#FF9766]/25 hover:shadow-xl hover:shadow-[#FF6062]/25 hover:-translate-y-0.5;
   }
 
   .btn-outline {
-    @apply px-6 py-3 rounded-lg border border-white/20 hover:border-accent/50 text-white font-medium transition-all duration-300 hover:bg-white/5 hover:-translate-y-0.5;
+    @apply px-6 py-3 rounded-lg border border-white/20 hover:border-[#FF6062]/50 text-white font-medium transition-all duration-300 hover:bg-white/5 hover:-translate-y-0.5;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all duration-300 placeholder-gray-400;
+    @apply w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-[#FF6062]/50 focus:ring-2 focus:ring-[#FF6062]/20 transition-all duration-300 placeholder-gray-400;
   }
 }
