@@ -7,7 +7,7 @@
       <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center justify-between">
-            <img src="/LOGO.png" class="w-20 h-auto" />
+            <img src="/logo.png" class="w-20 h-auto" />
             <a
               href="#"
               class="text-2xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent"
@@ -44,35 +44,42 @@
 
       <div class="container mx-auto px-6 relative">
         <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-8">
-           
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-              Free Lancer
-              <span
-              class="bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent"
-              >
-                Developer
-              </span>
+          <div class="space-y-8">  
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight text-center">
+             Vincent  Vullag     
             </h1>
-            <p class="text-xl text-gray-300 leading-relaxed">
-              Crafting digital experiences with code and creativity. Specialized in
-              building modern web applications that make a difference.
-            </p>
-            <div class="flex space-x-4">
-              <a href="#contact" class="btn-primary">Get in Touch</a>
-              <a href="#projects" class="btn-outline">View Projects</a>
-            </div>
-          </div>
-          <div class="relative hidden md:block">
+            <div class="relative hidden md:block">
             <div
              class="absolute inset-0 bg-gradient-to-r from-[#FF9766]/20 to-[#FF6062]/20 rounded-full filter blur-3xl"
             ></div>
             <img
-              src="https://placekitten.com/500/500"
+              src="/avatar.png"
               alt="Profile"
-              class="relative w-96 h-96 object-cover rounded-full border-4 border-white/20 animate-float mx-auto"
+              class="relative w-48 h-48 object-cover rounded-full border-4 border-white/20 animate-float mx-auto"
             />
+            <div>
+            <div>
+              
+            <a class="text-2xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent text-center">
+            hello
+            </a>
+            </div>
+            
+            </div>
           </div>
+            <p class="text-xl text-gray-300 leading-relaxed">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit, 
+             lorem non tristique faucibus, odio justo fermentum nisi, ut cursus sapien enim ac felis. 
+             Fusce dictum libero et mauris blandit, eu tincidunt libero pharetra. <br><br> 
+             
+             Sed vehicula, lacus at egestas facilisis, metus lectus gravida erat, quis viverra 
+             Curabitur nec erat vitae risus facilisis commodo. Nam id eros in nisi pharetra venenatis vel nec ligula. 
+             Proin gravida, velit ac feugiat scelerisque, enim libero aliquam eros, vitae malesuada ligula lorem sit amet urna. 
+             Suspendisse potenti. Donec eget metus a nisl consectetur vulputate eget sed mi.
+            </p>
+
+          </div>
+         
         </div>
       </div>
     </section>
