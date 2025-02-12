@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+/* Style the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #2F3748; /* Color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the draggable part of the scrollbar (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #FF6262; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9566; /* Color of the thumb when hovered */
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

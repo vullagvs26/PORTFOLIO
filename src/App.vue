@@ -28,89 +28,85 @@
         </div>
       </div>
     </nav>
-
-    Hero Section
-    <section id="home" class="relative min-h-screen flex items-center">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex">
       <!-- Animated background elements -->
-      <div class="absolute inset-0 overflow-hidden">
+      <div class="fixed inset-0 overflow-hidden">
         <div
-          class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full filter blur-3xl animate-pulse-slow"
+          class="fixed -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full filter blur-3xl animate-pulse-slow"
         ></div>
         <div
-          class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full filter blur-3xl animate-pulse-slow"
+          class="fixed -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full filter blur-3xl animate-pulse-slow"
           style="animation-delay: 2s"
         ></div>
       </div>
 
-      <div class="container mx-auto px-6 relative">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-8">  
-            <h1 class="text-3xl md:text-5xl font-bold leading-tight text-center">
-             Vincent  Vullag     
-            </h1>
-            <div class="relative hidden md:block">
+      <div class="container mx-auto px-6 relative flex justify-between ">
+        <!-- Left: Fixed Profile Information -->
+        <div
+          class="w-full md:w-1/2 space-y-8 sticky top-0 h-screen mr-28 flex flex-col justify-center"
+        >
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight text-center">
+            Vincent Vullag
+          </h1>
+          <div class="relative hidden md:block">
             <div
-             class="absolute inset-0 bg-gradient-to-r from-[#FF9766]/20 to-[#FF6062]/20 rounded-full filter blur-3xl"
+              class="absolute inset-0 bg-gradient-to-r from-[#FF9766]/20 to-[#FF6062]/20 rounded-full filter blur-3xl"
             ></div>
-            <img
-              src="/avatar.png"
-              alt="Profile"
-              class="relative w-48 h-48 object-cover rounded-full border-4 border-white/20 animate-float mx-auto"
-            />
             <div>
-            <div>
-              
-            <a class="text-2xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent text-center">
-            hello
-            </a>
+              <img
+                src="/avatar.png"
+                alt="Profile"
+                class="relative w-48 h-48 object-cover rounded-full border-4 border-white/20 animate-float mx-auto"
+              />
             </div>
-            
-            </div>
-          </div>
-            <p class="text-xl text-gray-300 leading-relaxed">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit, 
-             lorem non tristique faucibus, odio justo fermentum nisi, ut cursus sapien enim ac felis. 
-             Fusce dictum libero et mauris blandit, eu tincidunt libero pharetra. <br><br> 
-             
-             Sed vehicula, lacus at egestas facilisis, metus lectus gravida erat, quis viverra 
-             Curabitur nec erat vitae risus facilisis commodo. Nam id eros in nisi pharetra venenatis vel nec ligula. 
-             Proin gravida, velit ac feugiat scelerisque, enim libero aliquam eros, vitae malesuada ligula lorem sit amet urna. 
-             Suspendisse potenti. Donec eget metus a nisl consectetur vulputate eget sed mi.
-            </p>
-
-          </div>
-         
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="section-title text-center">About Me</h2>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="glass-card p-8 space-y-6">
-            <p class="text-lg text-gray-300 leading-relaxed">
-              With over 5 years of experience in web development, I specialize in creating
-              scalable and performant applications. My passion lies in combining beautiful
-              design with clean, efficient code.
-            </p>
-            <div class="grid grid-cols-2 gap-4">
-              <div
-                v-for="(value, key) in stats"
-                :key="key"
-                class="glass-card p-4 text-center"
+            <div class="text-center mt-4">
+              <a
+                class="text-2xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent"
               >
-                <div
-                 class="text-3xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent"
-                >
-                  {{ value }}
-                </div>
-                <div class="text-sm text-gray-400 mt-2">{{ key }}</div>
-              </div>
+                hello
+              </a>
             </div>
           </div>
-          <div class="space-y-8">
+          <p class="text-xl text-gray-300 leading-relaxed text-center ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit,
+            lorem non tristique faucibus, odio justo fermentum nisi, ut cursus sapien enim
+            ac felis. Fusce dictum libero et mauris blandit, eu tincidunt libero pharetra.
+          </p>
+
+          <p class="text-xl text-gray-300 leading-relaxed text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit,
+            lorem non tristique faucibus, odio justo fermentum nisi, ut cursus sapien enim
+            ac felis. Fusce dictum libero et mauris blandit, eu tincidunt libero pharetra.
+          </p>
+          
+        </div>
+
+        <!-- Right: Scrollable Content -->
+        <div id="about" class="w-full md:w-1/2 h-auto mt-72">
+          <h2 class="text-2xl font-bold mb-4">About Me</h2>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit,
+            lorem non tristique faucibus, odio justo fermentum nisi, ut cursus sapien enim
+            ac felis. Fusce dictum libero et mauris blandit, eu tincidunt libero pharetra.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div
+              v-for="(value, key) in stats"
+              :key="key"
+              class="glass-card p-4 text-center"
+            >
+              <div
+                class="text-3xl font-bold bg-gradient-to-r from-[#FF9766] to-[#FF6062] bg-clip-text text-transparent"
+              >
+                {{ value }}
+              </div>
+              <div class="text-sm text-gray-400 mt-2">{{ key }}</div>
+            </div>
+          </div>
+
+          <!-- Technical Expertise Section -->
+          <div id="work" class="space-y-8 mt-12">
             <h3 class="text-2xl font-bold">Technical Expertise</h3>
             <div class="space-y-6">
               <div v-for="skill in skills" :key="skill.name" class="glass-card p-4">
@@ -120,88 +116,88 @@
                 </div>
                 <div class="h-2 bg-white/10 rounded-full overflow-hidden">
                   <div
-                   class="h-full bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full transition-all duration-500"
+                    class="h-full bg-gradient-to-r from-[#FF9766] to-[#FF6062] rounded-full transition-all duration-500"
                     :style="{ width: skill.level + '%' }"
                   ></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="section-title text-center">Featured Projects</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="project in projects"
-            :key="project.title"
-            class="group glass-card overflow-hidden"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                :src="project.image"
-                :alt="project.title"
-                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+          <!-- Projects Section -->
+          <div id="projects" class="py-20">
+            <h2 class="section-title text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
-            </div>
-            <div class="p-6 space-y-4">
-              <h3 class="text-xl font-bold">{{ project.title }}</h3>
-              <p class="text-gray-300">{{ project.description }}</p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  v-for="tech in project.technologies"
-                  :key="tech"
-                  class="tech-pill"
-                  >{{ tech }}</span
-                >
-              </div>
-              <div class="pt-4 flex space-x-4">
-                <a :href="project.demo" class="btn-primary text-sm">Live Demo</a>
-                <a :href="project.github" class="btn-outline text-sm">GitHub</a>
+                v-for="project in projects"
+                :key="project.title"
+                class="group glass-card overflow-hidden"
+              >
+                <div class="relative overflow-hidden">
+                  <img
+                    :src="project.image"
+                    :alt="project.title"
+                    class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></div>
+                </div>
+                <div class="p-6 space-y-4">
+                  <h3 class="text-xl font-bold">{{ project.title }}</h3>
+                  <p class="text-gray-300">{{ project.description }}</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      v-for="tech in project.technologies"
+                      :key="tech"
+                      class="tech-pill"
+                      >{{ tech }}</span
+                    >
+                  </div>
+                  <div class="pt-4 flex space-x-4">
+                    <a :href="project.demo" class="btn-primary text-sm">Live Demo</a>
+                    <a :href="project.github" class="btn-outline text-sm">GitHub</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="section-title text-center">Get In Touch</h2>
-        <div class="max-w-3xl mx-auto glass-card p-8">
-          <form class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-gray-300 mb-2">Name</label>
-                <input type="text" class="input-field" placeholder="John Doe" />
-              </div>
-              <div>
-                <label class="block text-gray-300 mb-2">Email</label>
-                <input type="email" class="input-field" placeholder="john@example.com" />
-              </div>
+          <!-- Contact Section -->
+          <div id="contact" class="py-10">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="max-w-3xl mx-auto glass-card p-8">
+              <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-gray-300 mb-2">Name</label>
+                    <input type="text" class="input-field" placeholder="John Doe" />
+                  </div>
+                  <div>
+                    <label class="block text-gray-300 mb-2">Email</label>
+                    <input
+                      type="email"
+                      class="input-field"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-gray-300 mb-2">Subject</label>
+                  <input type="text" class="input-field" placeholder="Project Inquiry" />
+                </div>
+                <div>
+                  <label class="block text-gray-300 mb-2">Message</label>
+                  <textarea
+                    rows="4"
+                    class="input-field"
+                    placeholder="Your message here..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full">Send Message</button>
+              </form>
             </div>
-            <div>
-              <label class="block text-gray-300 mb-2">Subject</label>
-              <input type="text" class="input-field" placeholder="Project Inquiry" />
-            </div>
-            <div>
-              <label class="block text-gray-300 mb-2">Message</label>
-              <textarea
-                rows="4"
-                class="input-field"
-                placeholder="Your message here..."
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-primary w-full">Send Message</button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -209,7 +205,7 @@
     <!-- Footer -->
     <footer class="py-12 border-t border-white/10">
       <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="flex justify-around">
           <div>
             <h3 class="text-xl font-bold mb-4">Let's Connect</h3>
             <div class="flex space-x-4">
@@ -236,7 +232,6 @@
               </a>
             </div>
           </div>
-          .
           <div>
             <h3 class="text-xl font-bold mb-4">Contact Info</h3>
             <div class="space-y-2 text-gray-300">
@@ -303,3 +298,5 @@ const socials = [
   { name: "Instagram", url: "#" },
 ];
 </script>
+
+<style></style>
