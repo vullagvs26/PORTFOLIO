@@ -26,6 +26,9 @@
   background: #FF9566; /* Color of the thumb when hovered */
 }
 
+
+
+
 @layer base {
   html {
     scroll-behavior: smooth;
