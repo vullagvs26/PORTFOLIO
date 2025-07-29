@@ -346,7 +346,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A full-featured online shopping platform with real-time inventory management.",
-    image: "/public/coming soon.png",
+    image: "/PORTFOLIO/coming-soon.png",
     technologies: ["Vue", "Node.js", "MongoDB"],
     demo: "#",
     github: "#",
@@ -354,7 +354,7 @@ const projects = [
   {
     title: "Social Media Dashboard",
     description: "Analytics dashboard for social media management and monitoring.",
-    image: "/public/coming soon.png",
+    image: "/PORTFOLIO/coming-soon.png",
     technologies: ["React", "GraphQL", "AWS"],
     demo: "#",
     github: "#",
@@ -362,7 +362,7 @@ const projects = [
   {
     title: "AI Content Generator",
     description: "AI-powered platform for generating marketing content and copy.",
-    image: "/public/coming soon.png",
+    image: "/PORTFOLIO/coming-soon.png",
     technologies: ["Python", "TensorFlow", "FastAPI"],
     demo: "#",
     github: "#",
@@ -370,7 +370,7 @@ const projects = [
   {
     title: "AI Content Generator",
     description: "AI-powered platform for generating marketing content and copy.",
-    image: "/public/coming soon.png",
+    image: "/PORTFOLIO/coming-soon.png",
     technologies: ["Python", "TensorFlow", "FastAPI"],
     demo: "#",
     github: "#",
@@ -378,7 +378,7 @@ const projects = [
   {
     title: "AI Content Generator",
     description: "AI-powered platform for generating marketing content and copy.",
-    image: "/public/coming soon.png",
+    image: "/PORTFOLIO/coming-soon.png",
     technologies: ["Python", "TensorFlow", "FastAPI"],
     demo: "#",
     github: "#",
